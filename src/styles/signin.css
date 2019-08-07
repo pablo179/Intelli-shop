@@ -1,0 +1,123 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #4f7fdf;
+}
+a{
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color:  #f0f1f2;
+}
+.form{
+    width:420px;
+    height:100%;
+    margin:0px auto;
+    background-color: rgba(217, 85, 133, .8);
+    border-radius: 5px;
+    padding: 30px;
+  }
+  .head>img{
+      width: 45%;
+      position: relative;
+      left:28%;
+      }
+  .input_contain{
+    position:relative;
+    width: 70%;
+    height: 30px;
+    margin: 40px auto 60px auto;
+  }
+  input{
+    position: absolute;
+    width:80%;
+    left:10%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.4);
+
+  }
+  label{
+    position:absolute;
+    top:25%;
+    left:20px;
+    pointer-events:none;
+    color: #403636;
+    padding-left: 15px;
+  }
+  input:focus~label, input:valid ~ label{
+    top:-40px;
+    font-size:20px;
+    color:#403636;
+    transition: .5s all; 
+  }
+  .light{
+    position:absolute;
+    bottom:-7px;
+    left:3px;
+    height: 3px;
+    width:0;
+    transition: all .4s
+  }
+  input:focus+.light{
+    width:80%;
+    height:5px;
+    left: 11%;
+    background: #85aaf2;
+  }
+  button{
+    position:relative;
+    display: block;
+    background-color: #85aaf2;
+    border:none;
+    color: #f0f1f2;
+    width:70%;
+    height:45px;
+    margin: 15px auto;
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.4);
+  }
+  button:hover{
+        background: #4f7fdf;
+  }
+  span.icon{
+    position: relative;
+    top: 1;
+    left: -6px;;
+    float: left;
+    margin-left: .5rem;
+
+    width: 30px;
+    height: 37px;
+
+    text-align: center;
+
+    color: #403636;
+    background-color: #85aaf2;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+  }
+.i{
+    position: relative;
+    top: 20px;
+}
+  .ripple {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius:100%;
+    animation: ripple 1s ease-out;
+  }
+  
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
