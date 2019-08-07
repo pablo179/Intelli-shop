@@ -18,10 +18,10 @@
     color:  #f0f1f2;
   }
   .form{
-    width:420px;
+    width:440px;
     height:100%;
     margin:0px auto;
-    background-color: rgba(217, 85, 133, .8);
+    background-color: rgba(217, 85, 133, 1);
     border-radius: 5px;
     padding: 30px;
   }
