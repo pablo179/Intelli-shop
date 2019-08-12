@@ -35,7 +35,7 @@ const createWindow = () => {
         slashes: true
       })
     );
-  }, 5500);
+  }, 7000);
   // Menu
   const mainMenu = Menu.buildFromTemplate(templateMenu);
   // Set The Menu to the Main Window
