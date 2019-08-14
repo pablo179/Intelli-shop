@@ -18,38 +18,45 @@
     />
   </head>
   <body>
-    <form action="" class="form">
+    <form class="form" onsubmit="return submitdata()" action="login.html">
       <div class="head">
         <img src="../images/Untitled (1).png" />
       </div>
 
       <div class="input_contain">
-        <input type="text" required="" />
+        <input type="text" required id="name" />
         <span class="light"></span>
         <span class="icon"><i class="fa fa-user"></i></span>
         <label for="">Nombre</label>
       </div>
 
       <div class="input_contain">
-        <input type="text" required="" />
+        <input type="text" required id="email" />
         <span class="light"></span>
         <span class="icon"><i class="fa fa-envelope"></i></span>
         <label for="">Correo</label>
       </div>
 
       <div class="input_contain">
-        <input type="password" required="" />
+        <input type="password" required id="password" />
         <span class="light"></span>
         <span class="icon"><i class="fa fa-lock"></i></span>
         <label for="">Contraseña</label>
       </div>
 
       <div class="input_contain">
-        <input type="password" required="" />
+        <input type="password" required id="confirm" />
         <span class="light"></span>
         <span class="icon"><i class="fa fa-lock"></i></span>
         <label for="">Confirmar contraseña</label>
       </div>
+      <div class="input_contain">
+        <input type="text" required="false" id="imgURL" />
+        <span class="light"></span>
+        <span class="icon"><i class="far fa-image"></i></span>
+        <label for="">Url de imagen</label>
+      </div>
+      <div id="print"></div>
 
       <button>
         <i class="fas fa-user-plus"></i>
@@ -58,6 +65,8 @@
 
       <a href="login.html">¿Ya tienes cuenta?</a>
     </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <script src="../scripts/signin.js"></script>
   </body>
 </html>

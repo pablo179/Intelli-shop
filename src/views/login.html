@@ -18,25 +18,26 @@
     />
   </head>
   <body>
-    <form action="" class="form">
+    <form action="sale.html" class="form" onsubmit="return submitdata()">
       <div class="head">
         <img src="../images/logo-defined.png" />
       </div>
 
       <div class="input_contain">
-        <input type="text" required="" />
+        <input type="text" required="" id="email" />
         <span class="light"></span>
         <span class="icon"><i class="fa fa-user"></i></span>
-        <label for="">Usuario</label>
+        <label for="">Correo</label>
       </div>
 
       <div class="input_contain">
-        <input type="password" required="" />
+        <input type="password" required="" id="password" />
         <span class="light"></span>
         <span class="icon"><i class="fa fa-lock"></i></span>
         <label for="">Contraseña</label>
       </div>
 
+      <div id="print"></div>
       <button>
         <i class="fas fa-sign-in-alt"></i>
         Iniciar sesión
@@ -44,6 +45,7 @@
 
       <a href="signin.html">Crear cuenta</a>
     </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../scripts/login.js"></script>
   </body>
 </html>

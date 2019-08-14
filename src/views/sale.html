@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sale</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/sale.css" />
+  </head>
+  <body>
+    <div class="page-wrapper chiller-theme toggled">
+      <nav id="sidebar" class="sidebar-wrapper hidden">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="#">Intelli-Shop</a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-header">
+            <div class="user-pic">
+              <img
+                class="img-responsive img-rounded"
+                src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                alt="User picture"
+              />
+            </div>
+            <div class="user-info">
+              <span class="user-name">
+                MiUsuario
+              </span>
+              <a href="#" class="user-role">Cerrar Sesión</a>
+            </div>
+          </div>
+          <!-- sidebar-search  -->
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="sale.html">
+                    <i class="fas fa-shopping-bag"></i>
+                  <span>Ventas</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="stock.html">
+                    <i class="fas fa-box-open"></i>
+                  <span>Inventario</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="report.html">
+                    <i class="fas fa-clipboard-list"></i>
+                  <span>Reportes</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="tips.html">
+                    <i class="fas fa-comments-dollar"></i>
+                  <span>Recomendación</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="about.html">
+                    <i class="fas fa-info"></i>
+                  <span>Acerca de</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="animation start-home">
+            </ul>
+        </div>
+      </nav>
+      <main class="page-content">
+          <div class="show">
+              <h2>Artículos vendidos</h2>
+              <div class="allSales">
+                  <div class="row encabezado">
+                    <div class="column">Código</div>
+                    <div class="column">Producto</div>
+                    <div class="column">Cantidad</div>
+                    <div class="column">Precio unitario</div>
+                    <div class="column">Precio total</div>
+                    <div class="column"></div>
+                  </div>
+                  <div class="row ">
+                    <div class="column">001</div>
+                    <div class="column">Leche</div>
+                    <div class="column">1</div>
+                    <div class="column">23</div>
+                    <div class="column">23</div>
+                    <div class="column"><i class="fa fa-trash"></i></div>
+                  </div>
+                  <div class="row ">
+                    <div class="column">001</div>
+                    <div class="column">Leche</div>
+                    <div class="column">1</div>
+                    <div class="column">23</div>
+                    <div class="column">23</div>
+                    <div class="column"><i class="fa fa-trash"></i></div>
+                  </div>
+                  <div class="row ">
+                    <div class="column">001</div>
+                    <div class="column">Leche</div>
+                    <div class="column">1</div>
+                    <div class="column">23</div>
+                    <div class="column">23</div>
+                    <div class="column"><i class="fa fa-trash"></i></div>
+                  </div>
+              </div>   
+              <div class="results">
+                <div>  
+                    <span class="inpcont">
+                      <label for="">IVA: </label>
+                      <input type="text" disabled>
+                    </span>
+                    <span class="inpcont">
+                      <label for="">Subtotal: </label>
+                      <input type="text" disabled> 
+                    </span>
+                </div>
+                <span class="inpcont">
+                  <label for="">Total: </label>
+                  <input type="text" disabled>
+                </span>
+              </div>
+          </div>
+          <div class="sale">
+              <h3>Nueva venta</h3>
+              <span class="inpcont">
+                <label for="">Codigo: </label>
+                <input type="text" id="code">
+              </span>
+              <span class="inpcont">
+                <label for="">Producto: </label>
+                <div class="searchbar">
+                  <input type="text" id="product">
+                  <button id="search"><i class="fa fa-search"></i></button>
+                </div>
+              </span>
+              <span class="inpcont">
+                <label for="">Cantidad:</label>
+                <div class="quantity">
+                  <button>+</button>
+                  <input type="number">
+                  <button>-</button>
+                </div>
+              </span>
+              <button id="add">Agregar <i class="fas fa-plus"></i></button>
+              <button id="cancel">Cancelar</button>
+              <button id="accept">Vender</button>        
+          </div>
+      </main>
+      <div id="show-sidebar">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <script src="../scripts/sale.js"></script>
+  </body>
+</html>

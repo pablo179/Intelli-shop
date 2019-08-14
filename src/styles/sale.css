@@ -1,0 +1,185 @@
+.sale {
+  position: relative;
+  width: 770px;
+  height: 150px;
+  margin: 10px auto 0 auto;
+  background-color: #b3c8f2;
+  padding: 20px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.74);
+  border-radius: 15px;
+  color: black;
+}
+.show {
+  position: relative;
+  width: 770px;
+  height: 350px;
+  margin: 10px auto 0 auto;
+  background-color: #85aaf2;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.74);
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+}
+.allSales {
+  position: absolute;
+  width: 710px;
+  height: 260px;
+  top: 30px;
+  left: 30px;
+  background: rgb(223, 221, 221);
+  color: rgb(85, 79, 79);
+  border-radius: 5px 5px 0 5px;
+  font-weight: 600;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+.row {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.row:nth-child(1) {
+  border-bottom: 1px solid gray;
+}
+.column {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: center;
+}
+.row div i:hover {
+  color: #f1073a;
+  cursor: pointer;
+}
+.encabezado {
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+input {
+  border: none;
+  height: 25px;
+  color: black;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 10px;
+}
+button {
+  position: absolute;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.394),
+    0 7px 20px 0 rgba(0, 0, 0, 0.395);
+  border-radius: 5px;
+  display: block;
+  padding: 10px 17px;
+  cursor: pointer;
+}
+#cancel {
+  background: #f1073a;
+  bottom: 5px;
+  color: white;
+  right: 5px;
+}
+#accept {
+  background: #159c21;
+  bottom: 5px;
+  color: white;
+  left: 5px;
+}
+#add {
+  background: #403636;
+  bottom: 80px;
+  color: white;
+  right: 15px;
+}
+#code {
+  width: 50px;
+  padding: 0 7px;
+}
+.inpcont {
+  display: inline-flex;
+  margin-left: 10px;
+}
+label {
+  margin: 0 5px;
+}
+.searchbar {
+  display: flex;
+  width: 150px;
+  height: 25px;
+  background: white;
+  border-radius: 5px;
+}
+.searchbar input {
+  border: none;
+  background: none;
+  width: 80%;
+  height: 100%;
+}
+.searchbar button {
+  position: unset;
+  width: 20%;
+  height: 100%;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0 5px 5px 0;
+}
+.quantity {
+  display: flex;
+  width: 100px;
+  height: 25px;
+  background: white;
+  border-radius: 5px;
+}
+.quantity button {
+  position: unset;
+  width: 30px;
+  box-shadow: none;
+  position: unset;
+  width: 30px;
+  height: 100%;
+  padding: 0;
+}
+.quantity button:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+.quantity button:nth-child(3) {
+  border-radius: 0 5px 5px 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.quantity input {
+  width: 40px;
+  padding: 0 10px;
+  text-align: center;
+}
+.results {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  color: black;
+}
+.results input {
+  border-radius: 0;
+  background: rgb(223, 221, 221);
+  color: gray;
+}
+.results > span:nth-child(2) {
+  float: right;
+}
+.results .inpcont input {
+  border-bottom: 1px solid gray;
+  padding: 0 5px;
+  text-align: right;
+}

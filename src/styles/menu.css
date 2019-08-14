@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all .5s ease;
 }
 body {
   font-size: 0.9rem;
@@ -11,7 +12,8 @@ body {
 /*----------------page-wrapper----------------*/
 
 .page-wrapper {
-  height: 100vh;
+  height: 95vh;
+  width: 100%;
 }
 
 .page-wrapper .theme {
@@ -28,22 +30,28 @@ body {
   left: 0px;
 }
 
-@media screen and (min-width: 768px) {
-  .page-wrapper.toggled .page-content {
-    padding-left: 300px;
-  }
-}
 /*----------------show sidebar button----------------*/
 #show-sidebar {
   position: fixed;
-  left: 0;
-  top: 10px;
-  border-radius: 0 4px 4px 0px;
-  width: 35px;
+  left: 20px;
+  top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 45px;
+  height:  45px;
+  background: #cf1e5f;
   transition-delay: 0.3s;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 20px;
+  flex-flow: column;
+  cursor: pointer;
+  transition: .3s all ease;
 }
-.page-wrapper.toggled #show-sidebar {
-  left: -40px;
+#show-sidebar:hover{
+  background: #85aaf2;
 }
 /*----------------sidebar-wrapper----------------*/
 
@@ -55,6 +63,7 @@ body {
   top: 0;
   left: -300px;
   z-index: 999;
+  transition: all .5s ease;
 }
 
 .sidebar-wrapper ul {
@@ -97,6 +106,17 @@ body {
 .sidebar-wrapper .sidebar-brand #close-sidebar {
   cursor: pointer;
   font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+#close-sidebar:hover{
+  background: #85aaf2;
 }
 /*--------------------sidebar-header----------------------*/
 
@@ -108,6 +128,7 @@ body {
 .sidebar-wrapper .sidebar-header .user-pic {
   float: left;
   width: 60px;
+  height: 64px;
   padding: 2px;
   border-radius: 12px;
   margin-right: 15px;
@@ -275,24 +296,15 @@ body {
 /*--------------------------page-content-----------------------------*/
 
 .page-wrapper .page-content {
-  display: inline-block;
-  width: 100%;
-  padding-left: 0px;
-  padding-top: 20px;
-}
-
-.page-wrapper .page-content > div {
-  padding: 20px 40px;
-}
-
-.page-wrapper .page-content {
-  overflow-x: hidden;
+  display: block;
+  width: 800px;
+  margin: 10px auto;
 }
 
 /*------scroll bar---------------------*/
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   height: 7px;
 }
 ::-webkit-scrollbar-button {
@@ -300,15 +312,15 @@ body {
   height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #d95585;
+  background: #403636;
   border: 0px none #ffffff;
   border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d95585;
+  background: #403636;
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #d95585;
+  background: #403636;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -414,7 +426,7 @@ ul:nth-child(1):hover ~ .animation {
   width: 230px;
   height: 46px;
   left: 15px;
-  top: 150px;
+  top: 160px;
   background-color: #85aaf2;
 }
 .start-about,
@@ -422,7 +434,7 @@ ul:nth-child(1):hover ~ .animation {
   width: 230px;
   height: 46px;
   left: 15px;
-  top: 196px;
+  top: 206px;
   background-color: #85aaf2;
 }
 .start-blog,
@@ -430,7 +442,7 @@ ul:nth-child(3):hover ~ .animation {
   width: 230px;
   height: 46px;
   left: 15px;
-  top: 242px;
+  top: 252px;
   background-color: #85aaf2;
 }
 .start-portefolio,
@@ -438,7 +450,7 @@ ul:nth-child(4):hover ~ .animation {
   width: 230px;
   height: 46px;
   left: 15px;
-  top: 288px;
+  top: 298px;
   background-color: #85aaf2;
 }
 .start-contact,
@@ -446,6 +458,10 @@ ul:nth-child(5):hover ~ .animation {
   width: 230px;
   height: 46px;
   left: 15px;
-  top: 334px;
+  top: 344px;
   background-color: #85aaf2;
+}
+
+.hidden {
+  left: -2000px !important;
 }
